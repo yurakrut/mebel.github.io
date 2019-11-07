@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700,800|Open+Sans:400,700&amp;subset=hebrew" rel="stylesheet">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+	<div class="overflow-content">
+		@import "mobile-menu.html"
+		<div class="transform-content">
+			<div class="transform-content-overlay"></div>
+			@import "header.html"
+			<main class="cart">
+				<section class="cart-logo">
+					<div class="container">
+						<div class="cart-logo-content">
+							<h2 class="cart-logo-title">Cart</h2>
+							<p class="cart-logo-label">
+								<span class="cart-logo-label-span">savyonit</span>
+								<span class="cart-logo-label-span">/ cart</span>
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="cart-main">
+					<div class="container">
+						<div class="cart-main-flex">
+							<div class="cart-main-left">
+								<div class="cart-table">
+									<div class="cart-table-row">
+										<div class="cart-table-item cart-table-item_photo">Product</div>
+										<div class="cart-table-item cart-table-item_name"></div>
+										<div class="cart-table-item cart-table-item_price"></div>
+										<div class="cart-table-item cart-table-item_quantity">QTY</div>
+										<div class="cart-table-item cart-table-item_total">Total</div>
+										<div class="cart-table-item cart-table-item_delete"></div>
+									</div>
+									<div class="cart-table-row">
+										<div class="cart-table-item cart-table-item_photo">
+											<img src="img/catalog-item.jpg" alt="">
+										</div>
+										<div class="cart-table-item cart-table-item_name">Apple iPhone 5c - Blue, 16GB</div>
+										<div class="cart-table-item cart-table-item_price">$99.00</div>
+										<div class="cart-table-item cart-table-item_quantity">
+											<input type="number" class="cart-table-item-input" value="0">
+											<div class="cart-table-arrows">
+												<div class="cart-table-arrows_plus"></div>
+												<div class="cart-table-arrows_minus"></div>
+											</div>
+										</div>
+										<div class="cart-table-item cart-table-item_total">$99.00</div>
+										<div class="cart-table-item cart-table-item_delete">
+											<a href="">
+												<img src="img/delete.svg" alt="">
+											</a>
+										</div>
+									</div>
+									<div class="cart-table-row">
+										<div class="cart-table-item cart-table-item_photo">
+											<img src="img/catalog-item.jpg" alt="">
+										</div>
+										<div class="cart-table-item cart-table-item_name">Apple iPhone 5c - Blue, 16GB</div>
+										<div class="cart-table-item cart-table-item_price">$99.00</div>
+										<div class="cart-table-item cart-table-item_quantity">
+											<input type="number" class="cart-table-item-input" value="1">
+											<div class="cart-table-arrows">
+												<div class="cart-table-arrows_plus"></div>
+												<div class="cart-table-arrows_minus"></div>
+											</div>
+										</div>
+										<div class="cart-table-item cart-table-item_total">$99.00</div>
+										<div class="cart-table-item cart-table-item_delete">
+											<a href="">
+												<img src="img/delete.svg" alt="">
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="cart-coupon">
+									<p class="cart-coupon-title">Coupon</p>
+									<form class="cart-coupon-form" action="">
+										<input type="text" class="contacts-main-input order-form-input" required="" placeholder="Coupon code">
+										<button type="submit" class="btn order-form-btn">
+											Apply coupon
+										</button>
+									</form>
+								</div>
+							</div>
+							<form class="cart-main-right cart-total">
+								<h4 class="cart-total-title">Cart totals</h4>
+								<div class="cart-total-main">
+									<div class="cart-total-block">
+										<div class="cart-total-row">
+											<div class="cart-total-row-left">Subtotal</div>
+											<div class="cart-total-row-right">
+												<p class="cart-total-subtotal">$99.00</p>
+											</div>
+										</div>
+										<div class="cart-total-row">
+											<div class="cart-total-row-left">Shipping</div>
+											<div class="cart-total-row-right">
+												<label class="cart-total-label">
+													<input name="ship" type="radio" class="cart-total-radio">
+													<span class="cart-total-info">
+											Flat Rate: <span class="cart-total-info-price">$3.00</span>
+										</span>
+												</label>
+												<label class="cart-total-label">
+													<input name="ship" type="radio" class="cart-total-radio" checked>
+													<span class="cart-total-info">
+											Free Shipping: <span class="cart-total-info-price">$0.00</span>
+										</span>
+												</label>
+												<a href="" class="cart-total-link">Calculate shipping</a>
+												<div class="cart-total-drop">
+													<select class="js-select2 cart-total-select">
+														<option>Ukraine</option>
+														<option>Select B</option>
+														<option>Select C</option>
+														<option>Select D</option>
+													</select>
+													<input type="text" class="cart-total-input" placeholder="State / County">
+													<input type="text" class="cart-total-input" placeholder="Postcode / ZIP">
+													<button type="submit" class="btn order-form-btn product-btn_order cart-total-btn cart-total-btn_update">
+														Update totals
+													</button>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<div class="cart-total-block">
+										<div class="cart-total-row">
+											<div class="cart-total-row-left">Total</div>
+											<div class="cart-total-row-right">
+												<p class="cart-total-total">$99.00</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cart-total-btns">
+									<button class="btn product-btn_order cart-total-btn" disabled>
+										Update cart
+									</button>
+									<button type="submit" class="btn order-form-btn product-btn_order cart-total-btn">
+										Proceed to checkout
+									</button>
+								</div>
+							</form>
+						</div>
+
+					</div>
+				</section>
+			</main>
+			@import "footer.html"
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800|Open+Sans:400,700&amp;subset=hebrew" rel="stylesheet">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+	<div class="overflow-content">
+	@import "mobile-menu.html"
+	<div class="transform-content">
+		<div class="transform-content-overlay"></div>
+		@import "header.html"
+		<main class="cart">
+			<section class="cart-logo">
+				<div class="container">
+					<div class="cart-logo-content">
+						<h2 class="cart-logo-title">Checkout</h2>
+						<p class="cart-logo-label">
+							<span class="cart-logo-label-span">savyonit</span>
+							<span class="cart-logo-label-span">/ cart</span>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="cart-main">
+				<div class="container">
+					<div class="cart-main-top">
+						<p class="cart-main-top-text">
+							Returning customer? <a href="" class="cart-main-top-link">Click here to login</a>
+						</p>
+						<p class="cart-main-top-text">
+							Have a coupon? <a href="" class="cart-main-top-link">Click here to enter your code</a>
+						</p>
+					</div>
+					<div class="cart-main-flex">
+						<div class="cart-main-left">
+							<form action="" class="cart-main-form">
+								<h4 class="cart-main-form-title">Billing details</h4>
+								<div class="cart-main-form-flex">
+									<div class="cart-main-row cart-main-row_sm">
+										<label class="cart-main-label">FIRST NAME*</label>
+										<input type="text" class="cart-main-input" required>
+									</div>
+									<div class="cart-main-row cart-main-row_sm">
+										<label class="cart-main-label">LAST NAME*</label>
+										<input type="text" class="cart-main-input" required>
+									</div>
+									<div class="cart-main-row">
+										<label class="cart-main-label">COMPANY NAME (OPTIONAL)</label>
+										<input type="text" class="cart-main-input">
+									</div>
+									<div class="cart-main-row">
+										<label class="cart-main-label">COUNTRY*</label>
+										<select class="js-select2 cart-total-select">
+											<option>Ukraine</option>
+											<option>Select B</option>
+											<option>Select C</option>
+											<option>Select D</option>
+										</select>
+									</div>
+									<div class="cart-main-row">
+										<label class="cart-main-label">STREET ADDRESS*</label>
+										<input type="text" class="cart-main-input" required>
+									</div>
+									<div class="cart-main-row">
+										<label class="cart-main-label">STREET ADDRESS*</label>
+										<input type="text" class="cart-main-input" required>
+									</div>
+									<div class="cart-main-row">
+										<label class="cart-main-label">TOWN / CITY*</label>
+										<input type="text" class="cart-main-input" required>
+									</div>
+									<div class="cart-main-row">
+										<label class="cart-main-label">STATE / COUNTY*</label>
+										<input type="text" class="cart-main-input" required>
+									</div>
+									<div class="cart-main-row">
+										<label class="cart-main-label">POSTCODE / ZIP*</label>
+										<input type="text" class="cart-main-input" required>
+									</div>
+									<div class="cart-main-row">
+										<label class="cart-main-label">PHONE*</label>
+										<input type="tel" class="cart-main-input" required>
+									</div>
+									<div class="cart-main-row">
+										<label class="cart-main-label">EMAIL ADDRESS*</label>
+										<input type="email" class="cart-main-input" required>
+									</div>
+								</div>
+							</form>
+						</div>
+						<form class="cart-main-right cart-total">
+							<h4 class="cart-total-title">YOUR ORDER</h4>
+							<div class="cart-total-main">
+								<div class="cart-total-block cart-total-block_sm">
+									<div class="cart-total-row">
+										<div class="cart-total-row-left">PRODUCT</div>
+										<div class="cart-total-row-right">
+											<p class="cart-total-name">TOTAL</p>
+										</div>
+									</div>
+								</div>
+								<div class="cart-total-block cart-total-block_sm">
+									<div class="cart-total-row">
+										<div class="cart-total-row-left">Apple iPhone 5c - Blue, 16GB 	× 1</div>
+										<div class="cart-total-row-right">
+											<p class="cart-total-totalitem">$99.00</p>
+										</div>
+									</div>
+								</div>
+								<div class="cart-total-block">
+									<div class="cart-total-row">
+										<div class="cart-total-row-left">Subtotal</div>
+										<div class="cart-total-row-right">
+											<p class="cart-total-subtotal">$99.00</p>
+										</div>
+									</div>
+									<div class="cart-total-row">
+										<div class="cart-total-row-left">Shipping</div>
+										<div class="cart-total-row-right">
+											<label class="cart-total-label">
+												<input name="ship" type="radio" class="cart-total-radio">
+												<span class="cart-total-info">
+											Flat Rate: <span class="cart-total-info-price">$3.00</span>
+										</span>
+											</label>
+											<label class="cart-total-label">
+												<input name="ship" type="radio" class="cart-total-radio" checked>
+												<span class="cart-total-info">
+											Free Shipping: <span class="cart-total-info-price">$0.00</span>
+										</span>
+											</label>
+											<a href="" class="cart-total-link">Calculate shipping</a>
+											<div class="cart-total-drop">
+												<select class="js-select2 cart-total-select">
+													<option>Ukraine</option>
+													<option>Select B</option>
+													<option>Select C</option>
+													<option>Select D</option>
+												</select>
+												<input type="text" class="cart-total-input" placeholder="State / County">
+												<input type="text" class="cart-total-input" placeholder="Postcode / ZIP">
+												<button type="submit" class="btn order-form-btn product-btn_order cart-total-btn cart-total-btn_update">
+													Update totals
+												</button>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="cart-total-block">
+									<div class="cart-total-row">
+										<div class="cart-total-row-left">Total</div>
+										<div class="cart-total-row-right">
+											<p class="cart-total-total">$99.00</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul class="cart-pay">
+								<li class="cart-pay-item active">
+									<label class="cart-pay-label">
+										<input name="pay" type="radio" class="cart-total-radio" checked>
+										<span class="cart-pay-label-title">DIRECT BANK TRANSFER</span>
+									</label>
+									<p class="cart-pay-text">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+								</li>
+								<li class="cart-pay-item">
+									<label class="cart-pay-label">
+										<input name="pay" type="radio" class="cart-total-radio">
+										<span class="cart-pay-label-title">PAYPAL <img src="img/pay.jpg" alt="" class="cart-pay-img"> <a
+												href="" class="cart-pay-link">WHAT IS PAYPAL?</a></span>
+									</label>
+									<p class="cart-pay-text">Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+								</li>
+							</ul>
+							<div class="cart-total-btns">
+								<button type="submit" class="btn order-form-btn product-btn_order cart-total-btn cart-total-btn_big">
+									Proceed to checkout
+								</button>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		@import "footer.html"
+	</div>
+</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

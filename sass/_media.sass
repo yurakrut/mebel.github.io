@@ -1,0 +1,572 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1920px)
+  .cart-logo, .catalog-top
+    background-size: auto
+@media only screen and (max-width : 1440px)
+  .sixth-left-text br
+    display: none
+  .sixth-left
+    padding: 50px 50px 50px 20px
+  .third-main
+    padding: 0 20px
+  .third-main-img
+    width: 15vw
+    height: 15vw
+  .header-label
+    display: none
+  .cart-main-left
+    width: calc(100% - 550px)
+  .catalog-filter
+    flex-wrap: wrap
+  .catalog-filter-col
+    margin-bottom: 20px
+  .catalog .catalog-list
+    margin-top: 40px
+  .contacts-main-left
+    padding-right: 20px
+  .product-top-sliders
+    width: 450px
+  .order-form-column, .product-form-item
+    width: 140px
+    flex-shrink: 0
+  .order-form-textarea
+    width: 200px
+  .product-left
+    padding-right: 10px
+  .product-title
+    font-size: 30px
+  .product-top-slider_second .slick-next, .product-top-slider_second .slick-prev
+    display: none
+  .order-form-textarea
+    width: 100%
+@media only screen and (max-width : 1200px)
+  .fifth
+    padding: 80px 0
+  .seventh
+    padding-bottom: 0
+  .header-bottom-item, .header-bottom-item:last-child
+    margin: 0 10px
+
+  .header-bottom
+    justify-content: space-between
+  .catalog-item
+    width: 33.33%
+  .seventh-post
+    padding: 80px 0
+  .eight-form-label
+    font-size: 18px
+  .footer-bottom-flex
+    flex-direction: column
+  .footer-bottom-right
+    margin-top: 15px
+  .header-bottom-menu
+    justify-content: space-between
+  .catalog-item-color
+    width: 15px
+    height: 15px
+  .product-top-sliders
+    width: 360px
+    margin-right: 30px
+  .product-top-slider_second-item img
+    width: 75px
+    height: 75px
+  .product-btn_order, .product-btn_cart
+    font-size: 24px
+  .product-center-form
+    padding: 20px
+@media only screen and (max-width : 1024px)
+  .header
+    position: static
+  .header-top
+    display: none
+  .header-bottom
+    display: none
+  .header-center-searche
+    display: none
+    &_mobile
+      display: block
+  .header-center-logo
+    width: 130px
+  .header-center-setting
+    flex-direction: row-reverse
+  .first
+    margin-top: 0
+  .header-center-phone
+    margin-left: 15px
+  .header-btn_mobile
+    display: block
+  .header-center-input
+    width: 100%
+    padding-left: 50px
+  .mobile-login
+    height: 54px
+    line-height: 54px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    background: #ededed
+    border-radius: 4px
+    padding: 15px
+    color: #000000
+    text-decoration: none
+    margin-top: 20px
+  .header-top-social
+    margin-top: 20px
+  .header-top-icon-link
+    width: 40px
+    height: 40px
+  .header-top-icon-img
+    width: 15px
+  .mobile-menu
+    display: block
+  .second-main-title
+    font-size: 20px
+    background-size: 10px
+    padding: 10px 20px 10px 65px
+    line-height: 1
+  .second-main-block
+    width: calc(67% - 10px)
+  .second-main-block:nth-child(odd)
+    margin-right: 20px
+  .second-main-block_sm
+    width: calc(33% - 10px)
+  .third-main
+    flex-wrap: wrap
+  .third-main-img
+    width: 30vw
+    height: 30vw
+  .product-right
+    display: none
+  .catalog-left
+    width: 100%
+    padding-right: 0
+  .sixth-right
+    display: none
+  .sixth-left
+    width: 100%
+    padding: 50px 20px
+  .seventh-item-title
+    font-size: 20px
+  .seventh-item-text
+    font-size: 18px
+  .seventh-item-icon-img
+    width: 60px
+  .seventh-item-icon
+    height: 60px
+  .seventh-post-item
+    height: 23vw
+  .seventh-post-item_big
+    height: 30vw
+  .eight-form-label
+    font-size: 11px
+    padding-left: 10px
+  .third-main-item
+    margin-bottom: 20px
+  .blog
+    padding: 40px 0 0
+  .cart
+    padding-top: 0
+  .cart-main-flex
+    flex-direction: column
+  .cart-main-left
+    width: 100%
+  .cart-main-right
+    width: 100%
+  .cart-logo-label
+    display: none
+  .cart-logo-content
+    justify-content: center
+    text-align: center
+  .cart-total-link
+    display: none
+  .catalog
+    padding: 0
+  .catalog-item-color
+    width: 20px
+    height: 20px
+  .contacts
+    padding: 0 0 20px 0
+  .contacts-main-flex
+    flex-direction: column
+  .contacts-main-left
+    width: 100%
+    padding-right: 0
+  .contacts-main-right
+    width: 100%
+    padding: 0 0 20px 0
+    background: none
+  .contacts-main-left
+    padding-bottom: 0
+  .product-first
+    margin-top: 0
+    padding: 30px 0 70px
+  .product-left
+    width: 100%
+    padding-right: 0
+  .header-center-phone-item
+    margin: 20px 0 0 0
+    width: 100%
+  .constructor
+    margin-top: 40px
+  .header-center-phone
+    display: none
+  .header-center-searche_mobile
+    margin-right: 15px
+  .constructor-tabs-link
+    font-size: 20px
+    padding: 20px 10px
+@media only screen and (max-width : 768px)
+  .header-center-phone
+    display: none
+  .header-center-searche_mobile
+    margin-right: 15px
+  .first-title
+    font-size: 44px
+    line-height: 1
+    padding: 10px 20px 20px 20px
+  .first-subtitle
+    font-size: 24px
+  .first
+    padding: 150px 0 130px
+  .second-main-block
+    width: 100%
+    height: 40vw
+  .second-main-block:nth-child(odd)
+    margin-right: 0
+  .third-title
+    font-size: 36px
+  .second
+    padding: 50px 0 0px
+  .third-main-img
+    width: calc(50vw - 40px)
+  .third-main
+    margin-top: 40px
+  .third
+    padding-bottom: 60px
+  .fourth-title
+    font-size: 40px
+  .fourth-title .white-text
+    font-size: 54px
+  .fourth-subtitle
+    font-size: 24px
+  .fourth
+    padding: 40px 20px 50px
+  .fifth
+    padding: 50px 0
+  .product-form-item_sort
+    width: 180px
+  .fifth-top
+    align-items: center
+  .fifth-info
+    margin-top: 0
+  .catalog-item
+    width: 50%
+  .catalog-item-name
+    font-size: 18px
+  .sixth-left-title
+    font-size: 42px
+  .sixth-left-text
+    font-size: 18px
+    margin-bottom: 20px
+  .seventh-list
+    flex-wrap: wrap
+  .seventh-item
+    width: 100%
+    margin-bottom: 40px
+    &:last-child
+      margin-bottom: 0
+  .seventh
+    padding-top: 60px
+  .seventh-post
+    padding: 60px 0
+  .eight-flex
+    flex-wrap: wrap
+    flex-direction: column
+  .eight-left
+    width: calc(100% + 40px)
+    margin-left: -20px
+    padding: 50px 20px
+  .eight-left-item:last-child
+    margin-bottom: 0
+  .eight-right
+    width: 100%
+    margin-left: 0
+    padding: 40px 0 60px
+  .eight-form-label
+    font-size: 14px
+  .footer-top
+    flex-direction: column
+    align-items: flex-end
+  .footer
+    padding-top: 60px
+  .footer-right
+    margin-top: 40px
+    margin-left: 0
+    width: 100%
+    flex-direction: column
+  .footer-menu
+    width: 100%
+    margin-bottom: 40px
+  .footer-center
+    margin-top: 0
+  .footer-center-item
+    padding: 0 8px
+  .footer-bottom-right-img, .footer-bottom-right-text
+    display: none
+  .footer-bottom-left
+    text-align: center
+  .footer-social
+    justify-content: flex-end
+  .footer-social-icon
+    margin: 0 0 0 5px
+  .blog-content-item
+    width: 100%
+  .blog-title
+    font-size: 36px
+  .cart-table-row:first-child
+    display: none
+  .cart-table-item_photo, .cart-table-item_price
+    display: none
+  .cart-table-item_quantity
+    width: 120px
+  .cart-main
+    padding-top: 20px
+  .cart-total-row-left
+    width: 50%
+  .cart-total-row-right
+    width: 50%
+  .cart-main-right
+    padding: 40px 0 0
+    background: none
+  .cart-main-right:before, .cart-main-right:after
+    display: none
+  .cart
+    padding: 0 0 50px
+  .product-top-flex
+    flex-wrap: wrap
+  .product-top-sliders
+    width: 100%
+    max-width: 460px
+    margin: 0 auto
+  .product-top-slider_second-item img
+    width: 100px
+    height: 100px
+  .product-top-info
+    width: 100%
+    margin-top: 30px
+  .product-sale
+    text-align: right
+  .product-form
+    display: flex
+    flex-wrap: wrap
+  .order-form-flex
+    flex-direction: column-reverse
+    margin-bottom: 20px
+  .order-form-right
+    width: 100%
+  .order-form-column, .product-form-item
+    width: 100%
+    flex-shrink: 1
+  .order-form-left
+    width: 100%
+    margin-right: 0
+    margin-top: 30px
+  .order-form-subtitle
+    margin-bottom: 20px
+  .order-form-right .product-form-row
+    padding-left: 0
+  .product-form-label
+    flex-shrink: 0
+  .product-form .product-form-item
+    width: calc(100% - 80px)
+  .product-form-row
+    width: 100%
+  .product-center
+    background: none
+    margin-top: 20px
+  .product-center-title
+    padding: 20px 0
+  .product-center-form
+    padding: 20px 0
+  .product-top-btns
+    flex-direction: column
+    margin-top: 0
+    .btn
+      width: 100%
+      margin-top: 20px
+      margin-left: 0
+  .product-bottom
+    margin-top: 30px
+  .constructor-bottom
+    overflow: hidden
+    overflow-x: auto
+    justify-content: flex-start
+    width: calc(100% + 20px)
+    margin-left: -20px
+    direction: rtl
+  .constructor-tabs
+    width: 870px
+    padding-left: 20px
+  .constructor-tabs-link
+    width: 140px
+  .constructor-top-item
+    width: 30px
+    height: 30px
+    margin-right: 5px
+    margin-bottom: 5px
+  .color-label
+    width: 40px
+    height: 40px
+  .texture-label
+    width: 60px
+  .texture-label-text
+    font-size: 14px
+  .constructor-main
+    &-overflow
+      width: calc(100% + 40px)
+      margin-left: -20px
+      overflow-y: visible
+      overflow-x: auto
+      direction: rtl
+    &-block
+      width: 750px
+      position: relative
+  .constructor-main-change
+    left: 0
+    top: 100%
+    transform: translate(0, 0)
+    max-width: 100%
+    position: relative
+    margin-top: 40px
+  .constructor-main
+    margin-bottom: 40px
+  .filter-overflow
+    width: calc(100% + 20px)
+    overflow: hidden
+    overflow-x: auto
+    margin-left: -20px
+    direction: rtl
+    &-content
+      width: 750px
+      padding-left: 20px
+  .filter-block
+    flex-direction: column-reverse
+  .filter-block-left
+    margin: 40px auto 0
+    width: 100%
+    max-width: 320px
+  .filter-block-right
+    width: 100%
+    margin-left: 0
+@media only screen and (max-width : 480px)
+  .header-center
+    flex-direction: column
+  .header-center-setting
+    margin-top: 20px
+  .first-title
+    font-size: 34px
+  .first-subtitle
+    font-size: 18px
+    padding: 5px 25px
+  .second-main-title
+    font-size: 18px
+    top: 20px
+  .third-title
+    font-size: 24px
+  .third-main-img
+    width: 100%
+    height: auto
+  .third-main-item
+    width: 100%
+  .fifth-top
+    flex-wrap: wrap
+    justify-content: flex-end
+  .fifth-info
+    margin-top: 20px
+  .catalog-item
+    width: 100%
+    margin-bottom: 20px
+  .fifth .catalog-list
+    margin-top: 20px
+  .sixth-left-title
+    font-size: 36px
+  .seventh-post-item
+    width: 100%
+    height: 200px
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+  .seventh-post
+    flex-wrap: wrap
+  .eight-left
+    padding: 30px 20px
+  .eight-right-title
+    font-size: 38px
+  .eight-form
+    margin-top: 30px
+  .eight-form-label
+    width: 100%
+    background-size: 20px
+    padding-right: 50px
+    font-size: 9px
+  .footer-center-menu
+    flex-direction: column
+  .footer-center-item
+    margin: 5px 0
+    padding: 0
+    border: none
+    text-align: right
+  .blog-title
+    font-size: 28px
+  .cart-table-item_name
+    font-size: 14px
+  .cart-table-item
+    padding-right: 10px
+  .cart-coupon-form
+    width: 100%
+  .cart-total-btns
+    flex-direction: column
+    .btn
+      width: 100%
+  .cart-total-btn.order-form-btn
+    margin: 10px 0 0 0
+  .cart-main-row_sm
+    width: 100%
+  .catalog-filter-col .product-form-label
+    width: 100%
+  .catalog-filter-col
+    width: 100%
+    margin-left: 0
+  .product-form-item_catalog
+    flex-shrink: 0
+  .catalog-title
+    font-size: 46px
+  .catalog-content
+    padding: 40px 0
+  .contacts-main-item
+    margin-top: 40px
+  .contacts-main-subtitle-text
+    font-size: 26px
+  .product-top-slider_second-item img
+    height: 17.5vw
+  .product-top-slider_second-item
+    margin: 0 5px
+  .product-top-slider_second
+    margin-top: 10px
+  .product-title
+    font-size: 28px
+  .product-btn_order, .product-btn_cart
+    font-size: 20px
+  .order-form-btn
+    width: 100%
+  .product-bottom .btn
+    width: 100%
+    margin-left: 0
+  .text
+    font-size: 18px
+  .footer-center
+    padding-bottom: 5px
