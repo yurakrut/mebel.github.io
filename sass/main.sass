@@ -1,0 +1,823 @@
+@import "fonts"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #505050
+	opacity: 1
+
+*:-moz-placeholder
+	color: #505050
+	opacity: 1
+
+*::-moz-placeholder
+	color: #505050
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #505050
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: transparent
+body input:required:valid,
+body textarea:required:valid
+	color: #505050
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+	display: block
+
+ol, ul 
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+	content: ''
+	content: none
+a
+	outline: none
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: normal
+	font-family: 'Assistant', sans-serif
+	overflow-x: hidden
+img
+	display: block
+	max-width: 100%
+	height: auto
+.container
+	width: 100%
+	max-width: 1436px
+	padding: 0 20px
+	margin: 0 auto
+.text
+	font-size: 22px
+	line-height: 1.45
+	color: #505050
+	direction: rtl
+.btn
+	outline: none
+	border: none
+	text-decoration: none
+	font-size: 28px
+	font-weight: 700
+	color: #ffffff
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	transition: all .5s ease
+.header
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	background: #ffffff
+	z-index: 10
+	&-label
+		position: fixed
+		box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.21)
+		background-color: #6fb32c
+		color: #ffffff
+		display: flex
+		align-items: center
+		writing-mode: vertical-rl
+		left: -20px
+		top: 35vh
+		padding: 45px 10px
+		text-decoration: none
+		&-text
+			transform: rotate(180deg)
+			font-size: 28px
+			font-weight: 700
+			margin-top: 10px
+			margin-left: -4px
+	&-link
+		display: inline-block
+	&-top
+		background: #333333
+		padding: 6px 0 8px
+		.container
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&-output
+			align-items: center
+			display: flex
+			color: #ffffff
+			font-size: 18px
+			font-family: "Assistant", sans-serif
+			font-weight: 400
+			line-height: 1
+		&-sing, &-register
+			color: #ffffff
+			font-size: 18px
+			font-family: "Assistant", sans-serif
+			font-weight: 400
+			line-height: 1
+			text-decoration: none
+			display: flex
+			align-items: center
+
+		&-back
+			margin-left: 3px
+		&-span
+			margin: 0 4px
+		&-social
+			display: flex
+		&-icon
+			&-img
+				width: 12px
+			&-link
+				background: #484848
+				border-radius: 50%
+				padding: 5px
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 30px
+				height: 30px
+				margin-right: 3px
+				transition: all .5s ease
+				&:hover
+					background: #737373
+
+	&-center
+		display: flex
+		padding: 14px 0
+		align-items: center
+		justify-content: space-between
+		&-currency
+			font-weight: bold
+		&-logo
+			width: 190px
+		&-setting
+			display: flex
+		&-phone
+			margin: 0 15px 0 20px
+			&-item
+				display: flex
+				align-items: center
+				justify-content: flex-end
+				color: #000000
+				font-family: "Assistant", sans-serif
+				font-size: 28px
+				font-weight: 700
+				line-height: 1px
+				padding: 9px 7px
+				border-radius: 4px
+				text-align: right
+				text-decoration: none
+				width: 270px
+				background: #f5f5f5
+		&-basket
+			display: flex
+			align-items: center
+			img
+				width: 30px
+				margin-left: 10px
+		&-input
+			border: none
+			display: flex
+			align-items: center
+			justify-content: space-between
+			color: #000000
+			font-family: "Assistant", sans-serif
+			font-size: 20px
+			line-height: 1
+			padding: 14px 10px
+			border-radius: 4px
+			text-align: right
+			text-decoration: none
+			width: 360px
+			background: #f5f5f5 url(../img/search.svg) no-repeat left 10px center
+			background-size: 25px 25px
+			position: relative
+			outline: none
+			&-placeholder
+				color: #000000
+				opacity: 1
+			&:before
+				content: ''
+				position: absolute
+				left: 10px
+				top: 10px
+	//background: url("../img/")
+	&-bottom
+		display: flex
+		justify-content: flex-end
+		margin: 20px 0 20px
+		&-sublist
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+			background: #ffffff
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.31)
+			opacity: 0
+			pointer-events: none
+			transition: all .5s ease
+		&-subitem
+			border-bottom: 1px solid #dfdfdf
+		&-sublink
+			font-size: 20px
+			font-weight: 400
+			color: #000000
+			padding: 5px 5px
+			text-decoration: none
+			display: block
+			direction: rtl
+
+		&-menu
+			display: flex
+		&-link
+			color: #000000
+			font-family: "Assistant", sans-serif
+			font-size: 24px
+			font-weight: 400
+			line-height: 1
+			text-decoration: none
+			display: flex
+			align-items: center
+			&:hover
+				color: rgba(87, 87, 87, 0.99)
+		&-item
+			margin: 0 22px
+			position: relative
+			padding-bottom: 5px
+			&:last-child
+				margin: 0 0 0 20px
+			&:hover
+				.header-bottom-sublist
+					opacity: 1
+					pointer-events: auto
+
+.footer
+	background: #333333
+	padding: 93px 0 0
+	&-top
+		display: flex
+		justify-content: space-between
+	&-box
+		max-width: 190px
+		width: 100%
+	&-social
+		display: flex
+		justify-content: center
+		margin-top: 65px
+		&-icon
+			border: 1px solid #fff
+			border-radius: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 34px
+			height: 34px
+			margin-right: 6px
+			transition: all .5s ease
+			&:hover
+				border-color: transparent
+				background: #2b2b2b
+		&-img
+			height: 16px
+	&-menu
+		ul:first-child
+			margin-left: 120px
+		&-title
+			color: #d8d8d8
+			font-family: 'Open Sans', sans-serif
+			font-weight: 700
+			text-align: right
+		&-item
+			text-align: right
+		&-link
+			color: #d8d8d8
+			font-family: 'Open Sans', sans-serif
+			font-size: 16px
+			font-weight: 400
+			text-decoration: none
+			line-height: 28px
+			&:hover
+				text-decoration: underline
+	&-right
+		display: flex
+		justify-content: space-between
+		width: 930px
+		margin-top: 15px
+		margin-left: 20px
+	&-center
+		border-top: 1px solid #393939
+		margin-top: 80px
+		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4)
+		&-menu
+			display: flex
+		&-link
+			color: #e1e0df
+			font-family: 'Open Sans', sans-serif
+			font-size: 13px
+			font-weight: 400
+			text-transform: uppercase
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+		&-item
+			margin: 17px 0
+			border-right: 1px solid #393939
+			padding: 0 16px
+			&:first-child
+				padding-left: 0
+			&:last-child
+				border-right: none
+	&-bottom
+		padding: 25px 0
+		&-flex
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&-left
+			color: rgba(255, 255, 255, 0.51)
+		&-right
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			&-cards
+				margin-left: 10px
+			&-img
+				margin-left: 10px
+			&-text
+				color: #ffffff
+				font-size: 20px
+				direction: rtl
+		&-link
+			color: #ffffff
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+input[type='number']
+  -moz-appearance:textfield
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  -webkit-appearance: none
+.active-text
+	color: #6fb32c
+.bold-text
+	font-weight: bold
+.header-center-searche_mobile
+	width: 55px
+	height: 55px
+	border-radius: 4px
+	background: #f5f5f5 url(../img/search.svg) no-repeat center
+	background-size: 25px 25px
+	display: none
+.header-btn_mobile
+	height: 55px
+	line-height: 55px
+	text-decoration: none
+	background: #f5f5f5 url(../img/menu.svg) no-repeat left 15px center
+	color: rgba(0, 0, 0, 0.6)
+	text-transform: uppercase
+	font-size: 16px
+	padding: 0 15px 0 40px
+	background-size: 20px 20px
+	cursor: pointer
+	display: none
+	margin-right: 15px
+	border-radius: 4px
+.overflow-content
+	overflow: hidden
+.transform-content
+	transition: all .5s ease
+	position: relative
+	background: #ffffff
+	&-overlay
+		position: absolute
+		width: 100%
+		height: 100%
+		opacity: 0
+		pointer-events: none
+		background: rgba(0, 0, 0, 0.6)
+		top: 0
+		left: 0
+		z-index: 2
+		transition: opacity .5s ease
+	&.close
+		transform: translateX(320px)
+		.transform-content-overlay
+			opacity: 1
+			pointer-events: auto
+.header-top-back-img
+	width: 12px
+	transform: rotate(180deg)
+.mobile-menu
+	position: fixed
+	left: 0
+	top: 0
+	background: #ffffff
+	height: 100vh
+	overflow: auto
+	width: 320px
+	display: none
+	&-content
+		padding: 20px
+	&-close
+		width: 30px
+		height: 30px
+		background: #ffffff url(../img/close.svg) no-repeat center
+		background-size: 10px 10px
+		position: absolute
+		top: 10px
+		right: 10px
+		z-index: 20
+		border-radius: 50%
+		box-shadow: 1px 1px 6px 0 rgba(0,0,0,.2)
+input[type=text]::-ms-reveal
+	display: none
+	width: 0
+	height: 0
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration
+	display: none
+input:focus:-ms-input-placeholder,
+input:focus::-moz-placeholder,
+input:focus:-moz-placeholder,
+input:focus::-webkit-input-placeholder
+	color: transparent!important
+	opacity: 0!important
+@import "../components/pages/product/style"
+@import "../components/pages/blog/style"
+@import "../components/pages/catalog/style"
+@import "../components/pages/contacts/style"
+@import "../components/pages/cart/style"
+@import "../components/pages/home/style"
+.filter
+	margin-top: 40px
+	&-title
+		font-family: Assistant
+		font-size: 22px
+		font-weight: 800
+		color: #000000
+		direction: rtl
+	&-tabs
+		display: flex
+		margin-top: 20px
+		direction: rtl
+	&-tab
+		width: 16.66%
+		margin-right: 5px
+		border: 1px solid #959595
+		font-family: Assistant
+		font-size: 22px
+		font-weight: 700
+		color: #000000
+		text-align: center
+		text-decoration: none
+		height: 56px
+		line-height: 56px
+		padding: 0 5px
+		&.active
+			border: 3px solid #6fb32c
+		&:first-child
+			margin-right: 0
+	&-info
+		display: flex
+		align-items: center
+		direction: rtl
+		font-size: 18px
+		color: #000000
+		margin-top: 25px
+		flex-wrap: wrap
+		&-title
+			font-weight: 700
+			margin-left: 5px
+		&-item
+			margin-left: 10px
+			display: flex
+			align-items: center
+		&-color
+			width: 24px
+			height: 24px
+			background-color: #ff9ffc
+			display: inline-block
+		&-texture
+			width: 24px
+			height: 24px
+			background: url(../img/texture.jpg) no-repeat center
+			display: inline-block
+	&-list
+		display: flex
+		margin-top: 15px
+		direction: rtl
+		&-link
+			height: 72px
+			background-color: #dcdcdc
+			line-height: 72px
+			font-family: Assistant
+			font-size: 22px
+			font-weight: 700
+			color: #000000
+			text-decoration: none
+			text-align: center
+			width: 16.66%
+			margin-right: 5px
+			transition: all .5s ease
+			position: relative
+			&.active
+				color: #ffffff
+				background-color: #6fb32c
+				&:before
+					opacity: 1
+			&:before
+				position: absolute
+				content: ''
+				width: 0
+				height: 0
+				border: 15px solid transparent
+				border-bottom: 15px solid #ffffff
+				left: 50%
+				bottom: 0
+				transform: translateX(-50%)
+				opacity: 0
+				transition: opacity .5s ease
+			&:first-child
+				margin-right: 0
+	&-block
+		display: flex
+		justify-content: space-between
+		margin-top: 30px
+		align-items: flex-start
+		&-btn
+			margin-top: 15px
+		&-product
+			border: 1px solid #959595
+			padding: 20px
+		&-img
+			margin: 0 auto
+		&-left
+			width: 330px
+		&-right
+			width: 500px
+			margin-left: 30px
+			position: relative
+		&-item
+			display: flex
+			justify-content: flex-end
+			flex-wrap: wrap
+			position: absolute
+			width: 100%
+			top: 0
+			left: 0
+			opacity: 0
+			pointer-events: none
+			transition: opacity .5s ease
+			&.active
+				opacity: 1
+				pointer-events: auto
+		&-sel
+			width: 100%
+			max-width: 355px
+			border: 3px solid #555555
+			direction: rtl
+			height: 53px
+			line-height: 53px
+			position: relative
+			&:before
+				width: 38px
+				height: 38px
+				background: #6fb32c url(../img/arrow-big.png) no-repeat center
+				background-size: 10px
+				position: absolute
+				left: 4px
+				top: 50%
+				transform: translateY(-50%) rotate(-90deg)
+				content: ''
+				pointer-events: none
+			.product-form-select
+				width: 100%
+				height: 100%
+				border: none
+				outline: none
+				display: block
+		&-form
+			display: flex
+			width: 100%
+			justify-content: flex-end
+			&-btn
+				width: 53px
+				height: 53px
+				background: #6fb32c url(../img/search.png) no-repeat center
+				border: none
+				outline: none
+				cursor: pointer
+				margin-right: 10px
+				flex-shrink: 0
+			&-input
+				border: 3px solid #555555
+				outline: none
+				font-size: 18px
+				color: #000000
+				direction: rtl
+				width: 100%
+				max-width: 355px
+				padding: 0 20px
+.color-label
+	position: relative
+	cursor: pointer
+	width: 66px
+	height: 66px
+	flex-shrink: 0
+	margin-left: 5px
+	margin-bottom: 5px
+	&_first
+		background: #eced8c
+	&_second
+		background-color: #8cd3ed
+	&_third
+		background-color: #007aa6
+	&_fourth
+		background-color: #d600ba
+	&_fifth
+		background-color: #ff0000
+	&_sixth
+		background-color: #e59700
+	&_seventh
+		background-color: #01ad4a
+	&_eight
+		background-color: #7d7c00
+	&_ninth
+		background-color: #ad642f
+	&_ten
+		background-color: #000000
+	&_eleven
+		background-color: #979797
+	&_twelve
+		background-color: #ff9ffc
+	&_thirteen
+		background-color: #9aed8c
+	&_fourteen
+		background-color: #05c499
+	&-span
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+.label-input
+	position: absolute
+	width: 0
+	height: 0
+	opacity: 0
+	&:checked ~ .color-label-span
+		border: 2px solid #000000
+	&:checked ~ .texture-label-span
+		border: 2px solid #000000
+.color-label_ten .label-input:checked ~ .color-label-span
+	border-color: #eced8c
+.texture-label
+	width: 92px
+	text-align: center
+	position: relative
+	margin-left: 10px
+	cursor: pointer
+	margin-bottom: 17px
+	&-span
+		display: block
+		padding: 5px 5px 0
+		border: 2px solid transparent
+	&-img
+		margin: 0 auto
+	&-text
+		font-size: 16px
+		color: #000000
+.constructor
+  margin-top: 300px
+  padding-bottom: 40px
+  &-top
+    display: flex
+    justify-content: flex-end
+    width: calc(100% + 8px)
+    flex-wrap: wrap
+    &-item
+      width: 55px
+      height: 55px
+      background: #c7c7c7
+      position: relative
+      margin-right: 8.5px
+      margin-bottom: 8px
+      cursor: pointer
+    &-input
+      width: 0
+      height: 0
+      opacity: 0
+      position: absolute
+      &:checked ~ .constructor-top-span
+        border: 2px solid #000000
+    &-span
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      position: absolute
+      border: 2px solid transparent
+  &-main
+    margin: 70px auto 110px
+    width: 100%
+    //max-width: 1040px
+    position: relative
+    &-change
+      position: absolute
+      max-width: 500px
+      width: 100%
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+    &-item
+      position: absolute
+      top: 0
+      left: 0
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-end
+      opacity: 0
+      pointer-events: none
+      transition: opacity .5s ease
+      width: 100%
+      &.active
+        opacity: 1
+        pointer-events: auto
+  &-tabs
+    display: flex
+    justify-content: center
+    &-link
+      font-size: 24px
+      font-weight: 700
+      color: #ffffff
+      padding: 30px 20px
+      width: 175px
+      text-align: center
+      background-color: #000000
+      text-decoration: none
+      margin: 0 3px
+      transition: background-color.5s ease
+      &:hover, &.active
+        background-color: #6fb32c
+.constructor-main-custom, .constructor-main-svg
+	width: 100%
+	position: absolute
+	top: 0
+	left: 0
+.constructor-main-svg
+	z-index: 3
+.constructor-main-path
+	cursor: pointer
+	&.hover
+		fill: rgba(255, 0, 0, 0.2)
+	&.active
+		fill: rgba(255, 0, 0, 0.3)
+.constructor-main-change
+	z-index: 5
+	pointer-events: auto
+	&.hide
+		pointer-events: none
+.constructor-main-custom
+	&-img
+		position: absolute
+		width: 100%
+		left: 0
+		top: 0
+		z-index: 1
+		&:first-child
+			z-index: 2
+.constructor-tabs
+	direction: rtl
+.filter-block-btn
+	padding: 9px 30px
+@import "media" // Всегда в конце
